@@ -22,6 +22,12 @@ a:hover {
   color: #000;
 }
 
+iframe{
+  margin: auto;
+  height: 75%;
+  width: 75%;
+}
+
 h1,
 h2,
 h3,
@@ -33,7 +39,7 @@ h6,
 }
 
 .site-section {
-  padding: 7rem 0;
+  padding: 2rem 0;
 }
 
 .filters a {
@@ -531,13 +537,33 @@ h6,
   color: #000;
 }
 
-@media (max-width: 780px) {
-  .custom-navbar > .container {
-    padding-right: 0;
-    padding-left: 0;
-  }
+@media screen and (max-width: 750px) {
+  .mycont { display: flex; flex-flow: column-reverse; }
 }
 
 #carouselExampleControls{
   background-color: grey;
+  background-image: url("../img/tv.png");
+  background-repeat: no-repeat;
+}
+
+.carousel-item{
+}
+
+.container{
+  max-width: 92.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev{
+  background-color: black;
+  width: 5%;
+  margin-left: -5%;
+}
+
+.carousel-control-next{
+  background-color: black;
+  width: 5%;
+  margin-right: -5%;
 }
