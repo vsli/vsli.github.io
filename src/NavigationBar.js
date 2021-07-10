@@ -1,16 +1,20 @@
-import { Navbar, Nav, Container } from 'react-bootstrap'
-import './NavigationBar.css'
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import './NavigationBar.css';
+import logo from './film_icon.jpg';
 
 function NavigationBar() {
   return (
-    <Navbar sticky="top" bg="dark" variant="dark">
-      <Navbar.Brand href="#">Jiawei</Navbar.Brand>
+    <Navbar variant="light" expand="lg">
+      <Navbar.Brand href="#">
+        <a>
+          <img src={logo} width="64px" height="64px"></img>Jiawei Li
+        </a>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto">
-          <Nav.Link href="#reel">Reel</Nav.Link>
-          <Nav.Link href="#about">About Me</Nav.Link>
-          <Nav.Link href="#contact">Contact Me</Nav.Link>
+        <Nav className="ml-auto">
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

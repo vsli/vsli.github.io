@@ -10,6 +10,7 @@ function App() {
       <NavigationBar/>
       <Home />
       <About />
+      <img src={require("./logo.svg")}></img>
     </div>
   );
 }
